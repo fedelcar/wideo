@@ -1,0 +1,91 @@
+
+#foo{
+border-radius:50px;
+width:50px;
+height:50px;
+background:#c00;
+position:absolute;
+-moz-transition: all 1s; 
+-webkit-transition: all 1s;  
+-ms-transition: all 1s;  
+-o-transition: all 1s;  
+transition: all 1s;  
+}
+
+div .box                       
+		{border:1px solid grey; margin:5px; padding:8px;}
+
+		.center
+		{
+		    display:inline-block;
+		    margin-left:auto; 
+		    margin-right:auto;
+		}
+		.img1
+		{
+			margin:auto;
+			 transition-timing-function: ease-in-out;
+			transition:width 2s, height 2s, transform 3s;
+		}
+
+		.img1:hover {
+
+		    -webkit-transform:rotate(180deg);
+		    transform:rotate(360deg);
+		}
+		.img2
+		{
+		margin:auto;
+			 transition-timing-function: linear;
+			transition:width 2s, height 2s, transform 3s;
+		}
+		.img2:hover {
+
+		    -webkit-transform:rotate(180deg);
+		    transform:rotate(360deg);
+		}
+
+		.delay1 {
+		  position: relative;
+		  transition-property: font-size;
+		  transition-duration: 4s;
+		  transition-delay: 2s;
+		  font-size: 14px;
+		}
+
+		.delay1:hover {
+		  transition-property: font-size;
+		  transition-duration: 4s;
+		  transition-delay: 2s;
+		  font-size: 36px;
+		}
+
+		.menuButton {
+		  position: relative;
+		  transition-property: background-color, color;
+		  transition-duration: 1s;
+		  transition-timing-function: ease-out;
+		  text-align: left;
+		  background-color: grey;
+		  left: 5px;
+		  top: 5px;
+		  height: 26px;
+		  color: white;
+		  border-color: black;
+		  font-family: sans-serif;
+		  font-size: 20px;
+		  text-decoration: none;
+		  box-shadow: 2px 2px 1px black;
+		  padding: 2px 4px;
+		  border: solid 1px black;
+		}
+
+		.menuButton:hover {
+		  position: relative;
+		  transition-property: background-color, color;
+		  transition-duration: 1s;
+		  transition-timing-function: ease-out;
+		  background-color:white;
+		  color:black;
+		  box-shadow: 2px 2px 1px black;
+		}
