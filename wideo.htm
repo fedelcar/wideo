@@ -27,41 +27,43 @@
 	<div class="container fluid">
 		
 
-		<h1 class="delay1">HTML5 Skeleton</h1>
+		
 		<header>
-		  <h1>HTML5 Skeleton</h1>
+		  <h1>Wideo</h1>
 		</header>
 
 		<div class="container fluid">
-			<form action="example" method="post">
+			
 		   
 			    <label for="time">time: </label>
-			    <input type="text" id="time">
-			    <input type="submit" value="send">
+			    <input type="text" id="time"><br>
+			    <label for="time">x: </label>
+			    <input type="text" id="x">
+			    <label for="time">y: </label>
+			    <input type="text" id="y">
+			    <label for="time">alpha: </label>
+			    <input type="text" id="alpha">
+			    <label for="time">rotation: </label>
+			    <input type="text" id="rotation"><br>
+			    <div id="types	">
+					<input type="radio" id = "type1" name="type" value="linear"> Linear    
+					&nbsp;	<input type="radio" id = "type2" name="type" value="ease"> Ease
+				</div>
+			    
+
 		    
-		 </form>
+		 
 		</div>
-		<nav style="width: 100%; overflow: hidden;">
-			<div class="box" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="width: 600px; float: left;">
-			<img class="img2" style="margin:0px auto;display:block" src="foto 4x4.jpg" draggable="true" ondragstart="drag(event)" id="drag1" height="200" width="200"></div>
-
-			<div class="box" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 620px;">
-			<img class="img1" style="margin:0px auto;display:block" src="foto 4x4.jpg" draggable="true" ondragstart="drag(event)" id="drag1" height="200" width="200"></div>
-		</nav>
-
-
-		<div class="sidebar">
-		  <p><a class="menuButton" href="home">Home</a></p>
-		  <p><a class="menuButton" href="about">About</a></p>
-		  <p><a class="menuButton" href="contact">Contact Us</a></p>
-		  <p><a class="menuButton" href="links">Links</a></p>
-		</div>
-
-
-
-		<footer>	
+		<br>
+		<button type="button" class="btn btn-default" id="playButton" value= "playbutton" onclick="playButton();">Play</button>
+		<br>
+		<br>
 		<div id="foo"></div>
-		  <div class="box" id="timeline" style="float: down;">
+		<br>
+		<br>
+		<br>
+
+		<footer>
+			<div class="timeline"> </div>
 		</footer>
-	</div>
 </body>

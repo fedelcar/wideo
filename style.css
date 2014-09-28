@@ -1,20 +1,33 @@
 
 #foo{
-	border-radius:50px;
-	width:50px;
-	height:50px;
-	background:#c00;
+	
+	width:80px;
+	height:80px;
+	background:#3399FF;
+	top:150;
+	left:150;
 	position:absolute;
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;  
 	-ms-transition: all 1s;  
 	-o-transition: all 1s;  
-	transition: all 1s;  
+	transition: all 1s;
+	transition-timing-function: ease;  
 }
 
 div .box                       
 {
 	border:1px solid grey; margin:5px; padding:8px;
+}
+
+div .timeline                       
+{
+	border:1px solid grey; 
+	background:#3399FF;
+	width:800px;
+	height:30px;
+	margin:10px; 
+	padding:8px;
 }
 
 .center
@@ -62,6 +75,13 @@ transform:rotate(360deg);
 	transition-duration: 4s;
 	font-size: 36px;
 }
+
+footer {
+            
+            width: 50%;
+            bottom: 10%;
+            position: fixed;
+        }
 
 .menuButton {
 	position: relative;
