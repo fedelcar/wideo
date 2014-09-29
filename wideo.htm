@@ -2,68 +2,51 @@
 <meta charset="utf-8">
 
 <head>
-
-	<title>HTML5</title>
+	<title>Wideo</title>
 	<meta charset="utf-8">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/mootools/1.4.1/mootools-nocompat.js'></script>
+	<script src="jquery-2.1.1.min.js"></script>
 
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/mootools/1.4.1/mootools-nocompat.js'></script>
-
-<link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="script.js"></script>
-
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
 
 </head>
-<body>
-	
-	<div class="container fluid">
-		
 
-		
+<body>
+	<div class="container fluid">
+
 		<header>
 		  <h1>Wideo</h1>
 		</header>
-
-		<div class="container fluid">
-			
-		   
+		<div class="container fluid">   
 			    <label for="time">time: </label>
-			    <input type="text" id="time"><br>
-			    <label for="time">x: </label>
-			    <input type="text" id="x">
-			    <label for="time">y: </label>
-			    <input type="text" id="y">
-			    <label for="time">alpha: </label>
-			    <input type="text" id="alpha">
-			    <label for="time">rotation: </label>
-			    <input type="text" id="rotation"><br>
+			    <input type="text" id="time" value="4"><br>
+			    <label for="time" >x: </label>
+			    <input type="text" id="x" value="0">
+			    <label for="time" >y: </label>
+			    <input type="text" id="y" value="0">
+			    <label for="time" >alpha: </label>
+			    <input type="text" id="alpha" value="1">
+			    <label for="time" >rotation: </label>
+			    <input type="text" id="rotation" value="0"><br>
 			    <div id="types	">
-					<input type="radio" id = "type1" name="type" value="linear"> Linear    
+					<input type="radio" id = "type1" name="type" value="linear" checked="true"> Linear    
 					&nbsp;	<input type="radio" id = "type2" name="type" value="ease"> Ease
 				</div>
-			    
-
-		    
-		 
+		    <div id="status"></div>		 
+		</div><br>
+		<button type="button" class="btn btn-default" id="playButton" onclick="playButton();">Play</button>
+		<button type="button" class="btn btn-default" id="resetButton" onclick="resetButton(1);">Reset</button>
+		<br><br>
+		<div id="box"></div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>		
+		<div id="timeline" width="100%">
+			<div id="marker"></div>
 		</div>
-		<br>
-		<button type="button" class="btn btn-default" id="playButton" value= "playbutton" onclick="playButton();">Play</button>
-		<br>
-		<br>
-		<div id="foo"></div>
-		<br>
-		<br>
-		<br>
-
-		<footer>
-			<div class="timeline"> </div>
-		</footer>
+			
+		
 </body>

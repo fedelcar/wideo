@@ -1,12 +1,12 @@
 
-#foo{
+#box{
 	
 	width:80px;
 	height:80px;
 	background:#3399FF;
 	top:150;
 	left:150;
-	position:absolute;
+	position:relative;
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;  
 	-ms-transition: all 1s;  
@@ -15,100 +15,30 @@
 	transition-timing-function: ease;  
 }
 
-div .box                       
+
+#marker
 {
-	border:1px solid grey; margin:5px; padding:8px;
+	height:60px;
+	width:5px;
+	background: #000000;
+	top:5;
+	left:5;
+	position:absolute;
+	-moz-transition: all 1s; 
+	-webkit-transition: all 1s;  
+	-ms-transition: all 1s;  
+	-o-transition: all 1s;  
+	transition: all 1s;
+	transition-timing-function: linear  
 }
 
-div .timeline                       
+#timeline                   
 {
 	border:1px solid grey; 
-	background:#3399FF;
-	width:800px;
-	height:30px;
-	margin:10px; 
-	padding:8px;
-}
-
-.center
-{
-	display:inline-block;
-	margin-left:auto; 
-	margin-right:auto;
-}
-
-.img1
-{
-	margin:auto;
-	 transition-timing-function: ease-in-out;
-	transition:width 2s, height 2s, transform 3s;
-}
-
-.img1:hover {
-
--webkit-transform:rotate(180deg);
-transform:rotate(360deg);
-}
-
-.img2
-{
-	margin:auto;
-	 transition-timing-function: linear;
-	transition:width 2s, height 2s, transform 3s;
-}
-
-.img2:hover {
-	-webkit-transform:rotate(180deg);
-	transform:rotate(360deg);
-}
-
-.delay1 {
-	position: relative;
-	transition-property: font-size;
-	transition-duration: 4s;
-	transition-delay: 1s;
-	font-size: 14px;
-}
-
-.delay1:hover {
-	transition-property: font-size;
-	transition-duration: 4s;
-	font-size: 36px;
-}
-
-footer {
-            
-            width: 50%;
-            bottom: 10%;
-            position: fixed;
-        }
-
-.menuButton {
-	position: relative;
-	transition-property: background-color, color;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-	text-align: left;
-	background-color: grey;
-	left: 5px;
-	top: 5px;
-	height: 26px;
-	color: white;
-	border-color: black;
-	font-family: sans-serif;
-	font-size: 20px;
-	text-decoration: none;
-	box-shadow: 2px 2px 1px black;
-	padding: 2px 4px;
-	border: solid 1px black;
-}
-
-.menuButton:hover {
-	position: relative;
-	transition-property: background-color, color;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-	background-color:white;
-	color:black;
-	box-shadow: 2px 2px 1px black;
+	background:#FF3333;
+	position:relative;
+	height:60px;
+	width:100%;
+	bottom:10%;
+	left:0%;
 }
