@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 
 <head>
-	<title>Wideo</title>
+	<title>Evaluación wideo.co</title>
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -13,14 +13,12 @@
 
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
-
 </head>
 
 <body>
 	<div class="container fluid">
-
 		<header>
-		  <h1>Wideo</h1>
+		  <h1>wideo.co</h1>
 		</header>
 		<div class="container fluid">   
 			    <label for="time">time: </label>
@@ -31,22 +29,25 @@
 			    <input type="text" id="y" value="0">
 			    <label for="time" >alpha: </label>
 			    <input type="text" id="alpha" value="1">
+			    <label for="time" >size: </label>
+			    <input type="text" id="size" value="1">
 			    <label for="time" >rotation: </label>
 			    <input type="text" id="rotation" value="0"><br>
 			    <div id="types	">
 					<input type="radio" id = "type1" name="type" value="linear" checked="true"> Linear    
 					&nbsp;	<input type="radio" id = "type2" name="type" value="ease"> Ease
+					&nbsp;	<input type="radio" id = "type3" name="type" value="ease-in"> Ease-in
+					&nbsp;	<input type="radio" id = "type4" name="type" value="ease-out"> Ease-out
+					&nbsp;	<input type="radio" id = "type5" name="type" value="ease-in-out"> Ease-in-out
 				</div>
 		    <div id="status"></div>		 
 		</div><br>
 		<button type="button" class="btn btn-default" id="playButton" onclick="playButton();">Play</button>
-		<button type="button" class="btn btn-default" id="resetButton" onclick="resetButton(1);">Reset</button>
+		<button type="button" class="btn btn-default" id="resetButton" onclick="resetButton();">Reset</button>
 		<br><br>
 		<div id="box"></div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>		
-		<div id="timeline" width="100%">
+		<br><br><br><br><br><br><br><br><br><br><br><br>	
+		<div id="timeline" width="100%" onclick="clickTimeline(event);">
 			<div id="marker"></div>
-		</div>
-			
-		
+		</div>	
 </body>
